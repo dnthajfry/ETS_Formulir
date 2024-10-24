@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewreport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Pendataan</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <form id="memberForm">
+            <h1>Form Pendataan Member</h1>
+            <hr>
+
+            <label>Nama Panggilan</label>
+            <input type="text" id="namaPanggilan" name="nama_panggilan" placeholder="Nama Panggilan" required/>
+            <div class="error" id="namaPanggilanError"></div>
+            <br>
+
+            <label>Nama Lengkap</label>
+            <input type="text" id="namaLengkap" name="nama_lengkap" placeholder="Nama Lengkap" required/>
+            <div class="error" id="namaLengkapError"></div>
+            <br><br>
+
+            <label>Nomor Telepon</label>
+            <div class="phone-input">
+                <input type="text" id="countryCode" name="country_code" value="+62" size="1" readonly/>
+                <input type="text" id="phone" name="phone" placeholder="88888888888" required/>
+            </div>
+            <div class="error" id="phoneError"></div>
+            <br>
+
+            <label>Alamat</label>
+            <textarea id="alamat" cols="100" rows="5" placeholder="Masukan Alamat" name="address" required></textarea>
+            <div class="error" id="alamatError"></div>
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Masukan Email" name="email" required/>
+            <div class="error" id="emailError"></div>
+            <br>
+
+            <label for="psw">Password</label>
+            <input type="password" id="password" placeholder="Masukan Password" name="psw" required/>
+            <div class="error" id="passwordError"></div>
+            <br>
+
+            <label for="re-psw">Konfirmasi Password</label>
+            <input type="password" id="confirmPassword" placeholder="Konfirmasi Password" name="re-psw" required/>
+            <div class="error" id="confirmPasswordError"></div>
+            <br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
